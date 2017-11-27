@@ -1,0 +1,72 @@
+body
+{
+	font-family: 'Macondo Swash Caps', cursive;
+    background-image: url("../images/683052.jpg");
+	background-color: black;
+}
+
+#cry1, #cry2, #cry3, #cry4
+{
+	width: 90px;
+	height: 90px;
+}
+
+header{
+	background-color: black;
+	color: white;
+    border-bottom: 10px solid #666666;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+h1{
+	font-family: 'Times New Roman';
+}
+
+h3, h4
+{
+	background-color: black;
+	color: white;
+	width: 100%;
+	padding: 10px;
+	border-bottom: 2px solid #666666;
+	margin-top: 10px;
+}
+
+button
+{
+	background-color: black;
+	color: white;
+}
+
+#Instructions
+{
+    background-color: white;
+    border: 2px solid #666666;
+}
+
+#Instructions p
+{
+	padding: 10px;
+}
+
+.information
+{
+    background-color: white;
+	border: 2px solid #666666;
+	margin-bottom: 5px;
+}
+
+footer
+{
+	background-color: black;
+	font-family: 'Times New Roman';
+	color: white;
+    border-top: 10px solid #666666;
+    margin-top: 60px;
+    padding: 10px 0;
+    position:absolute;
+    width:100%;
+    bottom:0px;
+    z-index: -1;
+}

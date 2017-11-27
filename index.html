@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+    <title>My Crystals Collector</title>
+      
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- Additional Styling -->
+    <link href="https://fonts.googleapis.com/css?family=Macondo+Swash+Caps" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>Miguel Woroniak - Crystal Collector</h1>
+                        <p>
+                            <audio autoplay id="Music" loop>
+                            <source src="./assets/images/Crystallize-Lindsey_Stirling.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                </div>
+            </div>
+        </div>	
+    </header>
+
+
+    <div class="container">
+            <div class="row">
+                <div class = "col-md-6 text-center">
+                    <div id="Instructions">
+                        <h3>Instructions</h3>
+                        <p>Each crystal is worth a different number of points. The computer will generate a hidden number representing the cost of an item. The goal is for you to click on one or more of the crystals until you get to the cost of the item. If you go over, you lose.
+                        </p>
+
+                        <p>You will be given a random number at the start of the game.
+                        </p>
+
+                        <p>There are four crystals. By clicking on a crystal you will add a specific amount of points to your total score.    
+                        </p>
+
+                        <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.
+                        </p>
+
+                        <p>The value of each crystal is hidden from you until you click on it.
+                        </p>
+
+                        <p>Each time the game starts, the game will change the values of each crystal.
+                        </p>
+
+                        <p><button id="startBtn" class="btn btn-collector">Click to start game</button>
+                            <button id="resetBtn" class="btn btn-collector">Click to reset game</button>
+                            <button id="resetScoreBtn" class="btn btn-collector">Click to reset scoreboard</button>
+                        </p>
+                        </div>
+                    </div>
+                
+                    <div class = "col-md-3 text-center">
+                        <div class="information">
+                            <h4 class="row text-center" style="margin-left:0px;">Crystal Selection</h4>
+                            <div class="row text-center crystals">
+                                <div class="col-md-6"><button id="crystal1"><img id="cry1" src="./assets/images/crystal1.jpg"></button></div>
+                                <div class="col-md-6"><button id = "crystal2"><img id="cry2" src="./assets/images/crystal2.jpg"></button></div>
+                            </div>
+                            <div class="row text-center crystals">
+                                <div class="col-md-6"><button id="crystal3"><img id="cry3" src="./assets/images/crystal3.jpg"></button></div>
+                                <div class="col-md-6"><button id="crystal4"><img id="cry4" src="./assets/images/crystal4.jpg"></button></div>
+                            </div>
+                            <h4 id = "startErrorMessage" class="row text-center" style="margin-left:0px;">Please click to start game before selecting a crystal.</h4>
+                            <h5 id="results" class="text-center"></h5>
+                        </div>
+                    </div>
+                    
+                <div class="col-md-3 text-center">
+                    <div class="information">
+                        <h4 class="text-center">Game Score</h4>
+                        <p>The computer chooses: <span id = "computerNumber"></span></p>					
+                        <p>Your current total: <span id="currentTotal">0</span></p>					
+                        <p>Your current balance: <span id="balance">0</span></p>
+                    </div>
+ 
+                    <div class="information">
+                        <h4 class="text-center">Summary Scoreboard</h4>
+                        <p>Games won: <span id = "wins">0</span></p>
+                        <p>Games lost: <span id="losses">0</span></p>					
+                        <p>Total games: <span id="total">0</span></p>					
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+    <footer class = "container-fluid">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h6>@Copyright 2017 Miguel Woroniak</h6>
+                </div>
+            </div>
+    </footer>
+
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <!-- Bootstrap JavaScript CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- External JS File here -->
+  <script src="./assets/javascript/game.js"></script>
+
+</body>
+</html>
